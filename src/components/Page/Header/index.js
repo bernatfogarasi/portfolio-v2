@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   gap: 20px;
   padding: 20px;
   background: white;
+  z-index: 1;
 `;
 
 const Header = ({ className, ...props }) => {

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Page from "components/Page";
 import Welcome from "./Welcome";
-import About from "./About";
 import Project from "./Project";
 import Contact from "./Contact";
 import Resume from "./Resume";
@@ -16,7 +15,6 @@ const Root = ({ className, ...props }) => {
       <Project name="bugpen" />
       <Project name="sigmavote" />
       <Resume />
-      <About />
       <Contact />
     </Wrapper>
   );

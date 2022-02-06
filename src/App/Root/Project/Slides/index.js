@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { Slide as SlideShow } from "react-slideshow-image";
+// import { Fade as SlideShow } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import Slide from "./Slide";
 
 const Wrapper = styled(SlideShow)`
-  border: 1px solid;
-  flex-grow: 1;
   height: 100%;
   width: 100%;
+  overflow: hidden;
   .react-slideshow-container {
     height: 100%;
     width: 100%;
@@ -27,7 +27,12 @@ const Wrapper = styled(SlideShow)`
 
 const Slides = ({ className, slides, children, ...props }) => {
   return (
-    <Wrapper className={className} {...props}>
+    <Wrapper
+      className={className}
+      duration={10000}
+      transitionDuration={500}
+      {...props}
+    >
       {slides.map((slide, index) => (
         <Slide key={index} slide={slide} />
       ))}

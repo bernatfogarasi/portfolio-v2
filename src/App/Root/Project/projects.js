@@ -1,4 +1,29 @@
 import teamlistenerAuthentication from "assets/slides/teamlistener/authentication.png";
+import bugpenHome from "assets/slides/bugpen/home.png";
+import sigmavoteCreate from "assets/slides/sigmavote/create.png";
+import django from "assets/icons/technologies/black/django.png";
+import express from "assets/icons/technologies/black/express.png";
+import heroku from "assets/icons/technologies/black/heroku.png";
+import mongodb from "assets/icons/technologies/black/mongodb.png";
+import nextjs from "assets/icons/technologies/black/nextjs.png";
+import nodejs from "assets/icons/technologies/black/nodejs.png";
+import reactjs from "assets/icons/technologies/black/reactjs.png";
+import sqlite from "assets/icons/technologies/black/sqlite.png";
+import styledcomponents from "assets/icons/technologies/black/styledcomponents.png";
+import vercel from "assets/icons/technologies/black/vercel.png";
+
+const tech = {
+  django: { src: django, title: "Django" },
+  express: { src: express, title: "Express" },
+  heroku: { src: heroku, title: "Heroku" },
+  mongodb: { src: mongodb, title: "MongoDB" },
+  nextjs: { src: nextjs, title: "Nextjs" },
+  nodejs: { src: nodejs, title: "Node.js" },
+  reactjs: { src: reactjs, title: "React.js" },
+  sqlite: { src: sqlite, title: "SQLite" },
+  styledcomponents: { src: styledcomponents, title: "Styled Components" },
+  vercel: { src: vercel, title: "Vercel" },
+};
 
 const projects = {
   teamlistener: {
@@ -7,6 +32,15 @@ const projects = {
     title: "TeamListener",
     url: "http://teamlistener.com",
     urlEnd: ".com",
+    colors: ["#D6B11C", "#252526"],
+    stack: [
+      tech.reactjs,
+      tech.styledcomponents,
+      tech.nodejs,
+      tech.express,
+      tech.mongodb,
+      tech.heroku,
+    ],
     slides: [
       {
         title: "3 authentication methods",
@@ -22,11 +56,14 @@ const projects = {
     title: "BugPen",
     url: "https://bugpen.com",
     urlEnd: ".com",
+    colors: ["#00BFA6"],
+    // color: "white",
+    stack: [tech.reactjs, tech.styledcomponents, tech.django, tech.sqlite],
     slides: [
       {
-        title: "3 authentication methods",
-        description: "Ease of access and security.",
-        image: teamlistenerAuthentication,
+        title: "Home page with the latest updates",
+        description: "",
+        image: bugpenHome,
       },
     ],
   },
@@ -37,11 +74,14 @@ const projects = {
     title: "SigmaVote",
     url: "https://sigma-vote.vercel.app",
     urlEnd: ".vercel.app",
+    colors: ["#2D7DD2"],
+    color: "white",
+    stack: [tech.nextjs, tech.mongodb],
     slides: [
       {
-        title: "3 authentication methods",
-        description: "Ease of access and security.",
-        image: teamlistenerAuthentication,
+        title: "Create different polls",
+        description: "",
+        image: sigmavoteCreate,
       },
     ],
   },

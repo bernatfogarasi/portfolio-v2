@@ -4,8 +4,6 @@ import styled from "styled-components";
 const Wrapper = styled(Section)`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  padding: 20vh 10vw;
 `;
 
 const Text = styled.div`
@@ -26,17 +24,14 @@ const Role = styled.div`
   color: white;
 `;
 
-const Color = styled.div`
-  z-index: -1;
-  background: #ff0;
-  position: absolute;
-  height: 40vh;
-  width: 60vw;
-  top: 25vh;
-  right: 10vw;
-  border-bottom-right-radius: 10vw;
-  border-bottom: 10px solid;
-  border-right: 10px solid;
+const Skills = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: auto;
+  background: white;
+  margin: max(-6vw, -6vh);
+  margin-top: auto;
 `;
 
 const Welcome = ({ className, ...props }) => {
@@ -44,9 +39,8 @@ const Welcome = ({ className, ...props }) => {
     <Wrapper className={className} {...props}>
       <Text>Hi, my name is</Text>
       <Name>Bernat Fogarasi</Name>
-      <Text>and I'm a</Text>
-      <Role>Developer</Role>
-      {/* <Color /> */}
+      {/* <Text>and</Text> */}
+      <Role>I build things for the web.</Role>
     </Wrapper>
   );
 };
