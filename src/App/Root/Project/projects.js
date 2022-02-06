@@ -14,7 +14,7 @@ import vercel from "assets/icons/technologies/black/vercel.png";
 
 const tech = {
   django: { src: django, title: "Django" },
-  express: { src: express, title: "Express" },
+  express: { src: express, title: "Express.js" },
   heroku: { src: heroku, title: "Heroku" },
   mongodb: { src: mongodb, title: "MongoDB" },
   nextjs: { src: nextjs, title: "Nextjs" },
@@ -76,7 +76,7 @@ const projects = {
     urlEnd: ".vercel.app",
     colors: ["#2D7DD2"],
     color: "white",
-    stack: [tech.nextjs, tech.mongodb],
+    stack: [tech.nextjs, tech.mongodb, tech.vercel],
     slides: [
       {
         title: "Create different polls",

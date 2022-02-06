@@ -13,7 +13,7 @@ const Stack = ({ className, stack = [], color, ...props }) => {
   return (
     <Wrapper className={className} {...props}>
       {stack.map((item) => (
-        <Item color={color} {...item} />
+        <Item key={item.title} color={color} {...item} />
       ))}
     </Wrapper>
   );

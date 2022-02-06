@@ -9,11 +9,10 @@ const Wrapper = styled.div`
 const Menu = ({ className, ...props }) => {
   return (
     <Wrapper className={className} {...props}>
-      <Button>Home</Button>
-      <Button>Projects</Button>
-      <Button>Resume</Button>
-      <Button>About</Button>
-      <Button>Contact</Button>
+      <Button to="#home">Home</Button>
+      <Button to="#teamlistener">Projects</Button>
+      <Button to="#resume">Resume</Button>
+      <Button to="#contact">Contact</Button>
     </Wrapper>
   );
 };

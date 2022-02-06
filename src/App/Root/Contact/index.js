@@ -63,7 +63,7 @@ const Contact = ({ className, ...props }) => {
       <Title>Contact</Title>
       <Items>
         {items.map((item) => (
-          <Item href={item.href} src={item.src}>
+          <Item key={item.text} href={item.href} src={item.src}>
             {item.text}
           </Item>
         ))}

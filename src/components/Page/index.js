@@ -9,8 +9,7 @@ const Page = ({ className, children, ...props }) => {
   return (
     <Wrapper className={className} {...props}>
       <Header />
-      {children}
-      <Content></Content>
+      <Content>{children}</Content>
     </Wrapper>
   );
 };

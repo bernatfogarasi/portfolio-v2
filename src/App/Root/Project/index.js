@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Slides from "./Slides";
 import projects from "./projects";
 import Stack from "./Stack";
+import { HashLink } from "react-router-hash-link";
 
 const Wrapper = styled(Section)`
   display: flex;
@@ -66,6 +67,9 @@ const Project = ({ className, name, ...props }) => {
           </Url>
         </Head>
         <Slides slides={slides} />
+        <HashLink smooth to="/path#teamlistener">
+          Link to Hash Fragment
+        </HashLink>
       </Content>
     </Wrapper>
   );

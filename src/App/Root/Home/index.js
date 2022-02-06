@@ -24,17 +24,7 @@ const Role = styled.div`
   color: white;
 `;
 
-const Skills = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-top: auto;
-  background: white;
-  margin: max(-6vw, -6vh);
-  margin-top: auto;
-`;
-
-const Welcome = ({ className, ...props }) => {
+const Home = ({ className, ...props }) => {
   return (
     <Wrapper className={className} {...props}>
       <Text>Hi, my name is</Text>
@@ -45,4 +35,4 @@ const Welcome = ({ className, ...props }) => {
   );
 };
 
-export default Welcome;
+export default Home;
