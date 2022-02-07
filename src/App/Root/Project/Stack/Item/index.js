@@ -1,16 +1,16 @@
 import styled, { css } from "styled-components";
 
 const Wrapper = styled.div`
-  padding: 10px;
-  /* background: white; */
-  border-radius: 4px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
+  width: 100%;
 `;
 
 const Image = styled.div`
-  height: 40px;
+  height: 4vw;
+  max-height: 40px;
+  max-width: 100%;
   aspect-ratio: 1;
   display: flex;
   background: url(${({ src }) => src});
@@ -27,6 +27,7 @@ const Image = styled.div`
 const Title = styled.div`
   text-align: center;
   font-family: Mononoki;
+  font-size: min(2vw, 18px);
 `;
 
 const Item = ({ className, title, color, ...props }) => {

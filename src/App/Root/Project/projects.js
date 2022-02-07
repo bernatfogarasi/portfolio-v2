@@ -31,6 +31,16 @@ const projects = {
     name: "teamlistener",
     title: "TeamListener",
     url: "http://teamlistener.com",
+    githubUrls: [
+      {
+        title: "Client",
+        href: "https://github.com/bernatfogarasi/team-listener-client",
+      },
+      {
+        title: "Server",
+        href: "https://github.com/bernatfogarasi/team-listener-server",
+      },
+    ],
     urlEnd: ".com",
     colors: ["#D6B11C", "#252526"],
     stack: [
@@ -55,6 +65,16 @@ const projects = {
     name: "bugpen",
     title: "BugPen",
     url: "https://bugpen.com",
+    githubUrls: [
+      {
+        title: "Client",
+        href: "https://github.com/bernatfogarasi/bug-pen-client",
+      },
+      {
+        title: "Server",
+        href: "https://github.com/bernatfogarasi/bug-pen-server",
+      },
+    ],
     urlEnd: ".com",
     colors: ["#00BFA6"],
     // color: "white",
@@ -73,6 +93,12 @@ const projects = {
     name: "sigmavote",
     title: "SigmaVote",
     url: "https://sigma-vote.vercel.app",
+    githubUrls: [
+      {
+        title: "Source",
+        href: "https://github.com/bernatfogarasi/sigma-vote",
+      },
+    ],
     urlEnd: ".vercel.app",
     colors: ["#2D7DD2"],
     color: "white",

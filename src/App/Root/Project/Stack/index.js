@@ -3,10 +3,8 @@ import Item from "./Item";
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  /* justify-content: space-around; */
-  gap: 10px;
+  gap: 20px;
 `;
 
 const Stack = ({ className, stack = [], color, ...props }) => {

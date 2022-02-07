@@ -4,11 +4,11 @@ import styled from "styled-components";
 import Slides from "./Slides";
 import projects from "./projects";
 import Stack from "./Stack";
-import { HashLink } from "react-router-hash-link";
+import GitHub from "./GitHub";
 
 const Wrapper = styled(Section)`
   display: flex;
-  gap: 100px;
+  gap: min(5vw, 100px);
   box-sizing: border-box;
   background: ${({ colors }) => colors?.[0]};
   color: ${({ color }) => color};
@@ -17,7 +17,7 @@ const Wrapper = styled(Section)`
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: min(2vw, 40px);
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
@@ -25,51 +25,57 @@ const Content = styled.div`
 
 const Head = styled.div`
   display: flex;
-  gap: 80px;
-  align-items: center;
+  gap: min(5vw, 80px);
+  align-items: flex-start;
   width: 100%;
 `;
 
 const Index = styled.div`
   font-family: Mononoki;
-  font-size: 80px;
+  font-size: min(6vw, 80px);
 `;
 
 const Url = styled(A)`
   display: flex;
   flex-direction: column;
-  padding-bottom: 10px;
 `;
 
 const UrlTitle = styled.div`
   font-weight: 800;
-  font-size: 40px;
+  font-size: min(4vw, 40px);
 `;
 
 const UrlEnd = styled.div`
-  font-size: 20px;
+  font-size: min(3vw, 20px);
   font-family: Mononoki;
 `;
 
 const Project = ({ className, name, ...props }) => {
-  const { index, title, url, urlEnd, slides, colors, color, stack } =
-    projects[name];
+  const {
+    index,
+    title,
+    url,
+    urlEnd,
+    slides,
+    colors,
+    color,
+    stack,
+    githubUrls,
+  } = projects[name];
 
   return (
     <Wrapper className={className} {...props} colors={colors} color={color}>
-      <Stack stack={stack} color={color} />
       <Content>
         <Head>
-          <Index>P:{index}</Index>
+          <Index>{index}:</Index>
           <Url href={url} target="_blank">
             <UrlTitle href={url}>{title}</UrlTitle>
             <UrlEnd>{urlEnd}</UrlEnd>
           </Url>
+          <GitHub urls={githubUrls} color={color} />
         </Head>
         <Slides slides={slides} />
-        <HashLink smooth to="/path#teamlistener">
-          Link to Hash Fragment
-        </HashLink>
+        <Stack stack={stack} color={color} />
       </Content>
     </Wrapper>
   );

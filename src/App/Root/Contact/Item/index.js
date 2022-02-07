@@ -6,6 +6,10 @@ const Wrapper = styled(A)`
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  background: white;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 20px;
 `;
 
 const Image = styled.img`

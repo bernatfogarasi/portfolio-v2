@@ -8,11 +8,11 @@ const Wrapper = styled.div`
   box-sizing: border-box;
   padding: 10px;
   gap: 20px;
+  justify-content: center;
 `;
 
 const Title = styled.div`
   font-size: 25px;
-  font-family: Mononoki;
 `;
 
 const Description = styled.div`
@@ -20,18 +20,18 @@ const Description = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-  height: 100%;
-  width: 100%;
+  /* height: 100%;
+  width: 100%; */
+  width: fit-content;
+  height: fit-content;
   box-sizing: border-box;
   overflow: hidden;
-  display: flex;
+  /* display: flex; */
 `;
 
 const Image = styled.img`
   max-height: 100%;
   max-width: 100%;
-  margin: auto;
-  display: block;
   border: 2px solid;
   border-radius: 4px;
   box-sizing: border-box;
@@ -42,7 +42,7 @@ const Slide = ({ className, slide, ...props }) => {
   return (
     <Wrapper className={className} {...props}>
       <Title>{title}</Title>
-      <Description>{description}</Description>
+      {description && <Description>{description}</Description>}
       <ImageWrapper>
         <Image src={image} />
       </ImageWrapper>
