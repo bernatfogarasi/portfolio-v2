@@ -78,11 +78,11 @@ const data = {
 const Graph = ({ className, ...props }) => {
   const ref = useRef();
 
-  const [gravity, setGravity] = useState(-200);
+  const [gravity, setGravity] = useState(-100);
 
   useEffect(() => {
     setTimeout(() => {
-      setGravity(-700);
+      setGravity(-500);
     }, 2000);
   }, []);
 
@@ -95,7 +95,14 @@ const Graph = ({ className, ...props }) => {
           height: ref.current ? ref.current.clientHeight : 1000,
           width: ref.current ? ref.current.clientWidth : 1000,
           node: { fontSize: 16 },
-          d3: { gravity, linkLength: 200 },
+          d3: {
+            gravity:
+              (gravity / 1000) *
+              (ref.current
+                ? Math.min(ref.current.clientHeight, ref.current.clientWidth)
+                : 1000),
+            linkLength: 200,
+          },
         }}
       />
     </Wrapper>
