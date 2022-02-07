@@ -10,8 +10,8 @@ const Wrapper = styled.div`
 const GitHub = ({ className, color, urls = [], ...props }) => {
   return (
     <Wrapper className={className} {...props}>
-      {urls.map((url) => (
-        <Item key={urls} {...url} color={color} />
+      {urls.map((item) => (
+        <Item key={item.href} {...item} color={color} />
       ))}
     </Wrapper>
   );

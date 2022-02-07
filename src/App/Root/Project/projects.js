@@ -102,7 +102,7 @@ const projects = {
     urlEnd: ".vercel.app",
     colors: ["#2D7DD2"],
     color: "white",
-    stack: [tech.nextjs, tech.mongodb, tech.vercel],
+    stack: [tech.nextjs, tech.styledcomponents, tech.mongodb, tech.vercel],
     slides: [
       {
         title: "Create different polls",

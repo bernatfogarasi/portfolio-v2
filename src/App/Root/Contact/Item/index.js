@@ -19,6 +19,7 @@ const Image = styled.img`
 const Text = styled.div`
   font-family: Mononoki;
   font-size: 20px;
+  text-align: center;
 `;
 
 const Item = ({ className, src, children, ...props }) => {

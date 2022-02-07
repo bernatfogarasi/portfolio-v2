@@ -1,9 +1,11 @@
 import Section from "components/Section";
 import styled from "styled-components";
+import Graph from "./Graph";
 
 const Wrapper = styled(Section)`
   display: flex;
   flex-direction: column;
+  position: relative;
 `;
 
 const Text = styled.div`
@@ -31,6 +33,7 @@ const Home = ({ className, ...props }) => {
       <Name>Bernat Fogarasi</Name>
       {/* <Text>and</Text> */}
       <Role>I build things for the web.</Role>
+      <Graph />
     </Wrapper>
   );
 };
