@@ -32,7 +32,7 @@ const Resume = ({ className, ...props }) => {
         <Title>Resume</Title>
       </Head>
       <Pdf
-        src="https://drive.google.com/file/d/108GjJLnLrgcSWNqbluCwP06AI4e1IV9u/preview"
+        src={process.env.REACT_APP_RESUME_URL}
         width="640"
         height="480"
         allow="autoplay"

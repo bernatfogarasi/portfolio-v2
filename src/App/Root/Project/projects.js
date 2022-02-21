@@ -50,6 +50,7 @@ const projects = {
       tech.express,
       tech.mongodb,
       tech.heroku,
+      tech.vercel,
     ],
     slides: [
       {
@@ -78,7 +79,14 @@ const projects = {
     urlEnd: ".com",
     colors: ["#00BFA6"],
     // color: "white",
-    stack: [tech.reactjs, tech.styledcomponents, tech.django, tech.sqlite],
+    stack: [
+      tech.reactjs,
+      tech.styledcomponents,
+      tech.django,
+      tech.sqlite,
+      tech.heroku,
+      tech.vercel,
+    ],
     slides: [
       {
         title: "Home page with the latest updates",
