@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Graph as Graph_ } from "react-d3-graph";
+import { Graph as GraphD3 } from "react-d3-graph";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -83,7 +83,7 @@ const Graph = ({ className, ...props }) => {
 
   return (
     <Wrapper className={className} ref={ref} {...props}>
-      <Graph_
+      <GraphD3
         id="connections"
         data={data}
         config={{
