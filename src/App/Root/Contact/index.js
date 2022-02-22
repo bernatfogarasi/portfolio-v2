@@ -48,7 +48,7 @@ const items = [
   },
   {
     text: "This Website",
-    href: "https://bernatfogarasi.vercel.app",
+    href: "https://bernatfogarasi.com",
     src: imageWebsite,
   },
 ];
