@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { Graph as Graph_ } from "react-d3-graph";
 import { useEffect, useRef, useState } from "react";
+import { Graph as Graph_ } from "react-d3-graph";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   position: absolute;
@@ -69,8 +69,6 @@ const data = {
     { source: "Typescript", target: "React.js" },
   ],
 };
-
-// const languages = [];
 
 const Graph = ({ className, ...props }) => {
   const ref = useRef();

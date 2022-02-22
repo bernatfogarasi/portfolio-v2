@@ -1,10 +1,11 @@
 import A from "components/A";
 import Section from "components/Section";
 import styled from "styled-components";
-import Slides from "./Slides";
-import projects from "./projects";
-import Stack from "./Stack";
+
 import GitHub from "./GitHub";
+import projects from "./projects";
+import Slides from "./Slides";
+import Stack from "./Stack";
 
 const Wrapper = styled(Section)`
   display: flex;

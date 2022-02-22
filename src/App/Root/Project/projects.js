@@ -1,6 +1,3 @@
-import teamlistenerAuthentication from "assets/slides/teamlistener/authentication.png";
-import bugpenHome from "assets/slides/bugpen/home.png";
-import sigmavoteCreate from "assets/slides/sigmavote/create.png";
 import django from "assets/icons/technologies/black/django.png";
 import express from "assets/icons/technologies/black/express.png";
 import heroku from "assets/icons/technologies/black/heroku.png";
@@ -11,6 +8,9 @@ import reactjs from "assets/icons/technologies/black/reactjs.png";
 import sqlite from "assets/icons/technologies/black/sqlite.png";
 import styledcomponents from "assets/icons/technologies/black/styledcomponents.png";
 import vercel from "assets/icons/technologies/black/vercel.png";
+import bugpenHome from "assets/slides/bugpen/home.png";
+import sigmavoteCreate from "assets/slides/sigmavote/create.png";
+import teamlistenerAuthentication from "assets/slides/teamlistener/authentication.png";
 
 const tech = {
   django: { src: django, title: "Django" },
@@ -65,7 +65,7 @@ const projects = {
     index: 2,
     name: "bugpen",
     title: "BugPen",
-    url: "https://bugpen.com",
+    url: "https://bugpen.vercel.app",
     githubUrls: [
       {
         title: "Client",
@@ -76,9 +76,8 @@ const projects = {
         href: "https://github.com/bernatfogarasi/bug-pen-server",
       },
     ],
-    urlEnd: ".com",
+    urlEnd: ".vercel.app",
     colors: ["#00BFA6"],
-    // color: "white",
     stack: [
       tech.reactjs,
       tech.styledcomponents,
@@ -100,7 +99,7 @@ const projects = {
     index: 3,
     name: "sigmavote",
     title: "SigmaVote",
-    url: "https://sigma-vote.vercel.app",
+    url: "https://sigmavote.vercel.app",
     githubUrls: [
       {
         title: "Source",

@@ -1,8 +1,9 @@
-import styled from "styled-components";
 import Page from "components/Page";
+import styled from "styled-components";
+
+import Contact from "./Contact";
 import Home from "./Home";
 import Project from "./Project";
-import Contact from "./Contact";
 import Resume from "./Resume";
 
 const Wrapper = styled(Page)``;

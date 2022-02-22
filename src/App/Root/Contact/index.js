@@ -1,11 +1,12 @@
+import imageEmail from "assets/icons/socials/email.png";
+import imageGithub from "assets/icons/socials/github.png";
+import imageWebsite from "assets/icons/socials/globe.png";
+import imageLinkedin from "assets/icons/socials/linkedin.png";
+import imagePhone from "assets/icons/socials/phone.png";
 import Section from "components/Section";
 import styled from "styled-components";
+
 import Item from "./Item";
-import imageGithub from "assets/icons/socials/github.png";
-import imageLinkedin from "assets/icons/socials/linkedin.png";
-import imageEmail from "assets/icons/socials/email.png";
-import imageWebsite from "assets/icons/socials/globe.png";
-import imagePhone from "assets/icons/socials/phone.png";
 
 const Wrapper = styled(Section)`
   display: flex;
@@ -17,10 +18,6 @@ const Items = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-`;
-
-const Head = styled.div`
-  display: flex;
 `;
 
 const Title = styled.div`

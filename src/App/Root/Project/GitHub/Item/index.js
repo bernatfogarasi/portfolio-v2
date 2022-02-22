@@ -1,6 +1,6 @@
-import styled, { css } from "styled-components";
 import image from "assets/icons/socials/github.png";
 import A from "components/A";
+import styled, { css } from "styled-components";
 
 const Wrapper = styled(A)`
   display: flex;

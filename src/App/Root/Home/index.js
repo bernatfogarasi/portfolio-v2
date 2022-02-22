@@ -1,5 +1,6 @@
 import Section from "components/Section";
 import styled from "styled-components";
+
 import Graph from "./Graph";
 
 const Wrapper = styled(Section)`
@@ -31,7 +32,6 @@ const Home = ({ className, ...props }) => {
     <Wrapper className={className} {...props}>
       <Text>Hi, my name is</Text>
       <Name>Bernat Fogarasi</Name>
-      {/* <Text>and</Text> */}
       <Role>I build things for the web.</Role>
       <Graph />
     </Wrapper>

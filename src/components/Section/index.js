@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -16,29 +15,8 @@ const Anchor = styled.div`
 `;
 
 const Section = ({ className, id, children, ...props }) => {
-  const ref = useRef();
-
-  // useEffect(() => {
-  //   const updateHash = (event) => {
-  //     // if (id !== "teamlistener") return;
-  //     const active =
-  //       ref.current.offsetTop < window.pageYOffset &&
-  //       ref.current.offsetTop + ref.current.clientHeight > window.pageYOffset;
-  //     if (active) {
-  //       console.log("set");
-  //       window.location.hash = id;
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", (event) => updateHash(event));
-
-  //   return () => {
-  //     window.removeEventListener("scroll", (event) => updateHash(event));
-  //   };
-  // }, [ref]);
-
   return (
-    <Wrapper className={className} ref={ref} {...props}>
+    <Wrapper className={className} {...props}>
       <Anchor id={id} />
       {children}
     </Wrapper>

@@ -1,13 +1,14 @@
-import styled from "styled-components";
-import { Slide as SlideShow } from "react-slideshow-image";
-// import { Fade as SlideShow } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+
+import { Slide as SlideShow } from "react-slideshow-image";
+import styled from "styled-components";
+
 import Slide from "./Slide";
 
 const Wrapper = styled(SlideShow)`
-  height: 100%;
   width: 100%;
   overflow: hidden;
+  margin: auto;
   .react-slideshow-container {
     height: 100%;
     width: 100%;

@@ -20,13 +20,10 @@ const Description = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-  /* height: 100%;
-  width: 100%; */
   width: fit-content;
   height: fit-content;
   box-sizing: border-box;
   overflow: hidden;
-  /* display: flex; */
 `;
 
 const Image = styled.img`
