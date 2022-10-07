@@ -133,7 +133,7 @@ const projects = {
     index: 2,
     name: "bugpen",
     title: "BugPen",
-    url: "https://bugpen.vercel.app",
+    url: "https://bugpen.com",
     githubUrls: [
       {
         title: "Client",
@@ -144,7 +144,7 @@ const projects = {
         href: "https://github.com/bernatfogarasi/bug-pen-server",
       },
     ],
-    urlEnd: ".vercel.app",
+    urlEnd: ".com",
     colors: ["#00BFA6"],
     stack: [
       tech.javascript,
@@ -222,14 +222,14 @@ const projects = {
     index: 3,
     name: "sigmavote",
     title: "SigmaVote",
-    url: "https://sigmavote.vercel.app",
+    url: "https://sigmavote.com",
     githubUrls: [
       {
         title: "Source",
         href: "https://github.com/bernatfogarasi/sigma-vote",
       },
     ],
-    urlEnd: ".vercel.app",
+    urlEnd: ".com",
     colors: ["#2D7DD2"],
     color: "white",
     stack: [
