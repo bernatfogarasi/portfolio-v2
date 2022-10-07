@@ -9,6 +9,8 @@ const Wrapper = styled.div`
   padding: 10px;
   gap: 20px;
   justify-content: center;
+  width: 80%;
+  margin: auto;
 `;
 
 const Title = styled.div`
@@ -40,9 +42,11 @@ const Slide = ({ className, slide, ...props }) => {
     <Wrapper className={className} {...props}>
       <Title>{title}</Title>
       {description && <Description>{description}</Description>}
-      <ImageWrapper>
-        <Image src={image} />
-      </ImageWrapper>
+      {image ? (
+        <ImageWrapper>
+          <Image src={image} />
+        </ImageWrapper>
+      ) : null}
     </Wrapper>
   );
 };

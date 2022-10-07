@@ -17,11 +17,12 @@ const Image = styled.div`
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+
   ${({ color }) =>
     color === "white" &&
     css`
       filter: invert();
-    `}
+    `};
 `;
 
 const Title = styled.div`
